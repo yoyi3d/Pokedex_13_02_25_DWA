@@ -13,10 +13,13 @@
 
     <main>
         <section class="btns-cont">
-            <button data-filter=".type-fire">Fuego</button>
-            <button data-filter=".type-water">Agua</button>
-            <button data-filter=".type-grass">Planta</button>
-            <button data-filter="*">Todos</button>
+            <button class="filter" data-filter=".type-fire">Fuego</button>
+            <button class="filter" data-filter=".type-water">Agua</button>
+            <button class="filter" data-filter=".type-grass">Planta</button>
+            <button class="filter" data-filter=".type-electric">Eléctrico</button>
+            <button class="sort" data-sortby="number">Ordenar por número</button>
+            <button class="sort" data-sortby="name">Ordenar A-Z</button>
+            <button class="filter" data-filter="*">Todos</button>
         </section>
 
 
@@ -77,6 +80,12 @@
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="">
                 <h2 class="name">Blastoise</h2>
                 <p>Tipo: Agua</p>
+            </div>
+            <div class="card type-electric">
+                <p class="number">25</p>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="">
+                <h2 class="name">Pikachu</h2>
+                <p>Tipo: Eléctrico</p>
             </div>
 
         </section>
