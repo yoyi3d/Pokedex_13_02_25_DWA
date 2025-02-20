@@ -50,3 +50,32 @@ gap: 12px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+}
+
+.loader-content{
+    text-align: center;
+    color: aliceblue;
+    font-size: 4rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    display: none;
+}
+
+#content #model{
+    width: 100%;
+    height: 45vh;
+}
