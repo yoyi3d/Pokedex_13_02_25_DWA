@@ -6,8 +6,7 @@ $(document).ready(function (){
     
     $pokeCont.isotope({
         itemSelector: ".card",
-        layoutMode: "fitRows"
-       
+        layoutMode: "fitRows",
         getSortData: {
             name: ".name",
             number: ".number parseInt"

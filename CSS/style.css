@@ -3,10 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
 }
 
 body{
     background-color: whitesmoke;
+}
+
+img.web-title{
+width: 50%;
+display: flex;
+height: auto;
+justify-content: center;
+align-items: center;
 }
 
 h1{
@@ -49,4 +59,38 @@ gap: 12px;
     width: 200px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/* LOADING PAGE - PIKACHU.HTML */
+
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.loader-content{
+    text-align: center;
+    color: yellow;
+    font-size: 4rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content{
+    display: none;
+}
+
+#content #model{
+    width: 100%;
+    height: 45vh;
 }
