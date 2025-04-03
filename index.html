@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POKEDEX</title>
     <link rel="stylesheet" href="CSS/style.css">
-    
+
+    <!-- BS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 
 <body>
     <!-- <h1>¡HAZTE CON TODOS!</h1> -->
-     <div class="web-title">
+     <div class="web-title container justify-content-center">
          <img src="Media/IMG/pokemonTitle.png" alt="">
      </div>
 
     <main>
-        <section class="btns-cont">
+
+        <section class="container btns-cont">
             <button class="filter" data-filter=".type-iron">Acero</button>
             <button class="filter" data-filter=".type-fly">Volador</button>
             <button class="filter" data-filter=".type-water">Agua</button>
@@ -44,125 +48,23 @@
             <button class="sort" data-sortby="number">Numero</button>
             <button class="sort" data-sortby="name">Alfabético</button>
 
-
-
-
         </section>
 
 
-        <section class="poke-cont">
+        <section class="container">
+            
+            <div id="pokeCont" class="row justify-content-center p-4">
 
-            <div class="card type-grass">
+
+            </div>
+
+            <!-- <div class="card type-grass">
                 <p class="number">1</p>
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="">
                 <h2 class="name">Bulbasaur</h2>
                 <p>Tipo: Planta</p>
-            </div>
-            <div class="card type-grass">
-                <p class="number">2</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="">
-                <h2 class="name">Ivysaur</h2>
-                <p>Tipo: Planta</p>
-            </div>
-            <div class="card type-grass">
-                <p class="number">3</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="">
-                <h2 class="name">Venusaur</h2>
-                <p>Tipo: Planta</p>
-            </div>
-            <div class="card type-fire">
-                <p class="number">4</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="">
-                <h2 class="name">Charmander</h2>
-                <p>Tipo: Fuego</p>
-            </div> 
-            <div class="card type-fire">
-                <p class="number">5</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" alt="">
-                <h2 class="name">Charmeleon</h2>
-                <p>Tipo: Fuego</p>
-            </div>
-            <div class="card type-fire type-fly">
-                <p class="number">6</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="">
-                <h2 class="name">Charizard</h2>
-                <p>Tipo: Fuego</p>
-            </div>
-            <div class="card type-water">
-                <p class="number">7</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="">
-                <h2 class="name">Squirtle</h2>
-                <p>Tipo: Agua</p>
-            </div>
-            <div class="card type-water">
-                <p class="number">8</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png" alt="">
-                <h2 class="name">Wartortle</h2>
-                <p>Tipo: Agua</p>
-            </div>
-            <div class="card type-water">
-                <p class="number">9</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="">
-                <h2 class="name">Blastoise</h2>
-                <p>Tipo: Agua</p>
-            </div>
-            <div class="card type-bug">
-                <p class="number">10</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" alt="">
-                <h2 class="name">Caterpie</h2>
-                <p>Tipo: Bicho</p>
-            </div>
-            <div class="card type-bug">
-                <p class="number">11</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" alt="">
-                <h2 class="name">Metapod</h2>
-                <p>Tipo: Bicho</p>
-            </div>
-            <div class="card type-bug type-fly">
-                <p class="number">12</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" alt="">
-                <h2 class="name">Butterfree</h2>
-                <p>Tipo: Bicho</p>
-            </div>
-            <div class="card type-bug type-poison">
-                <p class="number">13</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png" alt="">
-                <h2 class="name">Weedle</h2>
-                <p>Tipo: Bicho</p>
-            </div>
-            <div class="card type-bug type-poison">
-                <p class="number">14</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" alt="">
-                <h2 class="name">Kakuna</h2>
-                <p>Tipo: Bicho</p>
-            </div>
-            <div class="card type-bug type-poison">
-                <p class="number">15</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png" alt="">
-                <h2 class="name">Beedrill</h2>
-                <p>Tipo: Bicho</p>
-            </div>
-            <div class="card type-elec">
-                <a href="Pikachu.html">
-                    <p class="number">25</p>
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="">
-                    <h2 class="name">Pikachu</h2>
-                    <p>Tipo: Eléctrico</p>
-                </a>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div> -->
+            
         </section>
 
 
@@ -180,8 +82,12 @@
 
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
+    <!-- APIcall Script -->
+    <script src="JS/listPokemon.js"></script>
     <!-- myScript -->
     <script src="JS/script.js"></script>
+    
+
 </body>
 
 </html>
